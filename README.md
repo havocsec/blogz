@@ -4,7 +4,7 @@ Please follow the instructions below to finish the setup of your new Qubt site.
 
 ## Installation
 
-1) Add a LICENSE to your repo.
+1) Add a LICENSE to your repository.
 2) Clone your version of the template to your local computer:
 ```shell
 git clone https://github.com/<username>/<reponame>
