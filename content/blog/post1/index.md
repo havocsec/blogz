@@ -3,8 +3,8 @@ title: "Mastering Bash Scripting: From Zero to Automation Hero"
 subtitle: "Unlock the power of shell scripting with pro techniques ⚡ "
 summary: "Learn Bash scripting from fundamentals to advanced automation with real-world examples, terminal outputs, and pro tips for security and efficiency."
 date: 2025-05-08
-cardimage: Bash.jpeg
-featureimage: Linux.jpeg
+cardimage: bash.jpeg
+featureimage: linux.jpeg
 caption: Bash
 authors:
   - Havoc: Havoc.jpeg
