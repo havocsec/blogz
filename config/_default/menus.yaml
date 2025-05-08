@@ -9,6 +9,9 @@ main:
 - name: Blog
   url: /blog/
   weight: 20
-- name: About
-  url: /about/
+- name: CTF
+  url: /ctf/
   weight: 30
+- name: Whoami
+  url: /about/
+  weight: 40

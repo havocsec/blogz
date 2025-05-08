@@ -1,33 +1,124 @@
 ---
-title: Blog Post with Inline Images
-subtitle: "Blog post subtitle :zap:"
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-date: 2023-11-24
-cardimage: photo1_card.jpeg
-featureimage: photo1.jpeg
-caption: Image caption
+title: "Mastering Bash Scripting: From Zero to Automation Hero"
+subtitle: "Unlock the power of shell scripting with pro techniques ⚡ "
+summary: "Learn Bash scripting from fundamentals to advanced automation with real-world examples, terminal outputs, and pro tips for security and efficiency."
+date: 2025-05-08
+cardimage: Bash.jpeg
+featureimage: Linux.jpeg
+caption: Bash
 authors:
-  - Christian: author.jpeg
+  - Havoc: Havoc.jpeg
 ---
-Use the shortcode "figArray" to add images to your blog post. Add your images to a subfolder. Call the figArray shortcode using the following syntax:
 
+## Bash Scripting in Real-Time: Automate Your World
+
+Bash scripting is one of the most powerful skills in a Linux user's toolbox.Bash is the **swiss army knife** of Linux/Mac systems. Want to:  
+🔹 Automate repetitive tasks  
+🔹 Chain commands like a wizard  
+🔹 Process text/data at lightspeed 
+
+"Basic to advanced bash scripting examples"
+
+1️⃣ 𝕊𝕙𝕖𝕓𝕒𝕟𝕘 (#!)
+
+Every script starts with this magic line:
+
+```bash
+#!/bin/bash
 ```
-{{</* figArray subfolder="<subfoldername>" figCaption="Some caption" numCols=2 */>}}
+This tells the system: "Run me with Bash!"
+
+2️⃣ 𝔹𝕒𝕤𝕚𝕔 𝕊𝕔𝕣𝕚𝕡𝕥
+
+Create hello.sh:
+
+```bash
+#!/bin/bash
+echo "🔥 Hello, $(whoami)! Today is $(date)"
 ```
-Both "figCaption" and "numCols" are optional. The shortcode will try to guess the best number of columns to use for the array of figures if "numCols" is not passed.
-You will need one subfolder containing images per call to the shortcode. The image files need to be one of the following types: png, jpg, jpeg or webp.
 
-{{< figArray subfolder="images" figCaption="A nice figure caption :wave:" >}}
+Run it:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat enim. Ut cursus magna sed luctus auctor. Sed eu augue dignissim, lobortis ipsum eu, dictum nisi. Integer varius ex maximus quam lobortis accumsan. Morbi mollis vulputate metus, aliquam feugiat arcu porta a. Quisque id justo ultricies, lacinia elit quis, pulvinar odio. Fusce feugiat at velit vitae lobortis. Nulla fringilla metus et sem mattis posuere :zap:.
+```bash
+$ chmod +x hello.sh
+$ ./hello.sh
+🔥 Hello, kali! Today is Wed May 8 16:45:22 EDT 2025
+```
 
-**Heading**
-- List item 1
-- List item 2
-- List item 3
 
-Cras ligula velit, aliquet ac orci dapibus, molestie ultricies libero. Donec at bibendum est. Phasellus vulputate dapibus quam vel accumsan. Curabitur at felis euismod, lobortis urna id, lobortis dolor. Cras tortor ligula, euismod quis lacus faucibus, condimentum fringilla dolor. Mauris in maximus nisi. Phasellus facilisis lacus quis mi cursus, a ornare mi maximus. Nullam nunc lacus, tincidunt varius risus nec, pellentesque vulputate ligula. Etiam id purus et tortor porta mattis. Donec id sapien nulla. Vivamus at malesuada tellus, id ultricies ante. Maecenas ullamcorper mi massa, at rutrum risus aliquet a. Donec sem tortor, molestie quis ex a, faucibus commodo augue. Morbi convallis sem vel tellus facilisis, et sodales felis consequat. Aliquam ut ante tristique, volutpat lectus vestibulum, egestas sapien.
+### Real-Time Example 
 
-Donec tellus est, faucibus eget ultricies ac, posuere non augue. Fusce ultrices lectus quis nunc lacinia, non tincidunt lectus ultrices. Morbi sodales nisi at felis luctus, eu convallis tortor commodo. Morbi tristique nibh neque, vel tristique dolor laoreet eget. Phasellus felis erat, mattis at suscipit id, faucibus in dolor. In vitae odio at lectus tincidunt dignissim. Fusce risus nisl, hendrerit a ultricies vitae, porta id sapien. Nam elit nunc, hendrerit ut sem quis, ultrices varius leo. Nullam eget lectus in sapien venenatis iaculis at at turpis. Etiam iaculis magna porttitor augue tempus suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam suscipit nibh leo, in pellentesque urna luctus et. Duis diam ipsum, posuere nec tellus sit amet, dignissim feugiat massa. Etiam ut sollicitudin lorem. Quisque commodo libero non mauris viverra malesuada. Morbi vitae auctor felis.
+### 1: Backup Script
 
-Maecenas ac dignissim dolor. Sed vitae nisl vel ante rutrum tincidunt ac et diam. Integer id dignissim quam. Vestibulum quis enim sit amet tellus tincidunt sagittis ut vitae nunc. Sed hendrerit, quam ut fermentum imperdiet, augue purus cursus felis, in ultricies elit mauris in risus. Morbi hendrerit imperdiet vehicula. Etiam porttitor magna eu quam laoreet ullamcorper. Etiam a erat ante. Curabitur pharetra, lacus in porttitor cursus, libero lacus consectetur dui, sit amet auctor tellus magna et enim. Pellentesque tristique molestie fringilla. Vivamus sit amet tincidunt quam. Morbi eu nisi quam. Nunc ultrices vel sem sit amet aliquam.
+Let's say you want to automate backups of a folder:
+
+```bash
+#!/bin/bash
+SRC="/home/user/documents"
+DEST="/home/user/backup"
+DATE=$(date +%F)
+mkdir -p "$DEST/$DATE"
+cp -r "$SRC" "$DEST/$DATE"
+echo "Backup completed for $SRC on $DATE"
+```
+
+**Run & Output**:
+
+```bash
+$ bash backup.sh
+Backup completed for /home/user/documents on 2025-05-08
+```
+
+### Real-Time Example 
+
+### 2: System Monitoring Script
+
+This script monitors CPU and memory usage:
+
+```bash
+#!/bin/bash
+echo "System Monitoring Report"
+echo "-------------------------"
+top -b -n1 | head -n 5
+```
+
+**Run & Output**:
+
+```bash
+$ bash monitor.sh
+System Monitoring Report
+-------------------------
+top - 08:45:01 up 3 days,  2:41,  1 user,  load average: 0.15, 0.17, 0.14
+Tasks: 195 total,   1 running, 194 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.0 us,  1.0 sy,  0.0 ni, 95.0 id,  1.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7894.5 total,   1254.2 free,   3540.3 used,   3100.0 buff/cache
+```
+
+### Real-Time Example 
+
+### 3: Batch File Renamer
+
+Renames all `.txt` files in a directory to include a timestamp:
+
+```bash
+#!/bin/bash
+for file in *.txt; do
+  mv "$file" "$(date +%Y%m%d)_$file"
+done
+```
+
+**Run & Output**:
+
+```bash
+$ bash rename.sh
+$ ls
+20250508_report.txt  20250508_notes.txt
+```
+
+### Recap
+
+- Automate backups with timestamps
+- Monitor system performance live
+- Rename files in bulk quickly
+
+Learning Bash scripting is like learning a superpower for your terminal!

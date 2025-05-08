@@ -3,9 +3,9 @@
 ############################
 
 author:
-  name: Daniel-wambua
+  name: Richie-Havoc
   image: author.png
-  greeting: "Your new Qubt site :tada:"
+  greeting: "Ethical Hacker | Security Researcher | Developer | Pentester | CTF Player :tada:"
   icon: ":wave:"
 
 ############################
@@ -15,15 +15,17 @@ author:
 links:
   - github: https://github.com/Daniel-wambua/blogz
   - link: https://github.com/Daniel-wambua/blogz#readme
-  # - website: 
+  - signal: https://signal.me/#eu/N2acU1DF0_iC_eFAJ-zg32OfVaLiRwts-HlDEQ1elCfAvfi4261Bh49PbPhwzZFQ
+  - website: https://havocsec.tech
+  - linkedin: https://www.linkedin.com/in/daniel-wambua-a312b32b8/
+  - whatsapp: +254 111 976984
+  - telegram: +254 111 976984
   # - x-twitter: 
-  # - mastodon: 
-  # - linkedin: 
+  # - mastodon:  
   # - instagram: 
   # - reddit: 
-  # - telegram: 
-  # - whatsapp: 
-  # - signal: 
+  # - telegram: +254 111 976984
+  # - whatsapp: +254 111 976984
   # - codepen: 
   # - dev: 
   # - email: 
