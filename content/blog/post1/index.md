@@ -7,7 +7,7 @@ cardimage: bash.jpeg
 featureimage: linux.jpeg
 caption: Bash
 authors:
-  - Havoc: Havoc.jpeg
+  - Havoc: logo.png
 ---
 
 ## Bash Scripting in Real-Time: Automate Your World
@@ -122,3 +122,8 @@ $ ls
 - Rename files in bulk quickly
 
 Learning Bash scripting is like learning a superpower for your terminal!
+
+---
+
+_Blog post & guide © havoc 2025- For educational purposes only.  
+Tag or DM me if you learned something or have questions!_
