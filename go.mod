@@ -1,4 +1,4 @@
-module github.com/Daniel-wambua/blogz
+module github.com/havocsec/blogz
 
 go 1.24.3
 
