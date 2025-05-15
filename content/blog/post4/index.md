@@ -472,6 +472,7 @@ Throughout the creation of this blog post, information was gathered and cross-re
 
 This list is not exhaustive but provides a strong starting point for anyone looking to learn more about eBPF.
 
-
+ Happy Hacking!!
+ 
 ---
 Tag or DM me if you learned something
