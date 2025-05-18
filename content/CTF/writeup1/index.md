@@ -18,7 +18,7 @@ authors:
 The first challenge i solved was this one
 
 # Based Encoder (rev)
-![image](https://raw.githubusercontent.com/havocsec/images/refs/heads/main/image-2.png?token=GHSAT0AAAAAADDM5VLA3AUUMI25CH363GG62BBXYEA)
+![image](https://raw.githubusercontent.com/Daniel-wambua/images/refs/heads/main/image-2.png?token=GHSAT0AAAAAADDXHQUM5EZUKMKMA4C6P4H22BJ3MVQ)
 
 ## Solution
 
@@ -28,16 +28,16 @@ strings based_encoder
 ```
 
 Response
-![image](https://raw.githubusercontent.com/havocsec/images/refs/heads/main/Screenshot%20from%202025-05-12%2010-06-28.png?token=GHSAT0AAAAAADDM5VLAZ5CDAGOHRW6SCFBE2BBX5FQ) 
+![image](https://raw.githubusercontent.com/Daniel-wambua/images/refs/heads/main/Screenshot%20from%202025-05-12%2010-06-28.png?token=GHSAT0AAAAAADDXHQUN4TJCUDBH5XZZMIBY2BJ3LHQ) 
 There is a string ,Which looks like a BASE64 encoded text. juicy! juicy!
 
 Using BASE64 decoder we get the flag.
-![Screenshot](https://raw.githubusercontent.com/havocsec/images/refs/heads/main/Screenshot%20from%202025-05-12%2010-08-30.png?token=GHSAT0AAAAAADDM5VLAVGFDKAK3A4RFEGGK2BBX5XA)
+![Screenshot](https://raw.githubusercontent.com/Daniel-wambua/images/refs/heads/main/Screenshot%20from%202025-05-12%2010-08-30.png?token=GHSAT0AAAAAADDXHQUNXJFYZRLB3DDB3HWQ2BJ3LQA)
 
 Next challenge
 
 **Better AES (Crypto)**
-![image](https://raw.githubusercontent.com/havocsec/images/refs/heads/main/image-3.png?token=GHSAT0AAAAAADDM5VLB3OF3EALFSLZ3Z7GU2BBX6SA)
+![image](https://raw.githubusercontent.com/Daniel-wambua/images/refs/heads/main/image-3.png?token=GHSAT0AAAAAADDXHQUNVRPJU6PPMVTWBHTW2BJ3NJA)
 
 ## Solution
 
@@ -187,7 +187,7 @@ REDACTED
 Next challenge 
 
 # Rainbow Bash Adventure (rev)
-![image](https://raw.githubusercontent.com/havocsec/images/refs/heads/main/image-5.png?token=GHSAT0AAAAAADDM5VLASPEMRLZBCITLEXQ62BBX7RQ)
+![image](https://raw.githubusercontent.com/Daniel-wambua/images/refs/heads/main/image-5.png?token=GHSAT0AAAAAADDXHQUMBA2UTPTCKHEVD2RA2BJ3NMA)
 
 ## Solution
 
@@ -303,13 +303,13 @@ else:
   print("Flag not found. TSP path might be incorrect or there's another issue.")
   ```
 
-![image](https://raw.githubusercontent.com/havocsec/images/refs/heads/main/Screenshot%20from%202025-05-12%2010-26-39.png?token=GHSAT0AAAAAADDM5VLB4VXF2YKHKSKXDL2M2BBX6FA)
+![image](https://raw.githubusercontent.com/Daniel-wambua/images/refs/heads/main/Screenshot%20from%202025-05-12%2010-26-39.png?token=GHSAT0AAAAAADDXHQUMG5IEQKQZG73BQFUA2BJ4ASQ)
 
 Next challenge
 
 # Professor (Misc)
 
-![image](https://raw.githubusercontent.com/havocsec/images/refs/heads/main/image-7.png?token=GHSAT0AAAAAADDM5VLBDN64L7ANAN6H6ODG2BBYAVQ)
+![image](https://raw.githubusercontent.com/Daniel-wambua/images/refs/heads/main/image-7.png?token=GHSAT0AAAAAADDXHQUNY5UEVB7TVONXFCIY2BJ3NOA)
 
 ## Solution
 
@@ -328,9 +328,9 @@ Storing it in a PDF and uploading the PDF
 makes the AI think the report is perfect and convers everything and grades 5.5
 
 
-![image](https://raw.githubusercontent.com/havocsec/images/refs/heads/main/Screenshot%20from%202025-05-12%2010-30-45.png?token=GHSAT0AAAAAADDM5VLAH3H365K7FPABF3UU2BBYBMA)
+![image](https://raw.githubusercontent.com/Daniel-wambua/images/refs/heads/main/Screenshot%20from%202025-05-12%2010-30-45.png?token=GHSAT0AAAAAADDXHQUMG7RULC5QFLWROLAY2BJ3LQA)
 
-![image](https://raw.githubusercontent.com/havocsec/images/refs/heads/main/Screenshot%20from%202025-05-12%2010-32-30.png?token=GHSAT0AAAAAADDM5VLABE5KVM4GKUE567VY2BBYBPA)
+![image](https://raw.githubusercontent.com/Daniel-wambua/images/refs/heads/main/Screenshot%20from%202025-05-12%2010-32-30.png?token=GHSAT0AAAAAADDXHQUNCX6WCLPZZUK6ISKQ2BJ3MSA)
 
 
 i managed to solve those.
