@@ -11,10 +11,10 @@ main:
   weight: 20
 - name: CTF
   url: /ctf/
-  weight: 30
+  weight: 20
 - name: Whoami
   url: /about/
-  weight: 40
-  name: pentesting
+  weight: 30
+- name: pentesting
   url: /pentesting/
-  weight: 50
+  weight: 40
