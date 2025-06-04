@@ -2,7 +2,7 @@
 title: "NAHAMCON-CTF - 2025"
 subtitle: "⚡ Hosted by JUSTHACKING TEAM AND THERE FRIENDS ⚡"
 summary: "*The 2025 challenges were really cool*"
-date: 2025-06-4
+date: 2025-06-04
 cardimage: nahamcon.webp
 featureimage: nahamcon.webp
 caption: CTF Challenges
@@ -607,9 +607,7 @@ ROT24: djye.rvrv
 ROT25: ekzf.swsw
 ```
 
-Then I used the list with [FinalRecon](https://github.com/thewhiteh4t/FinalRecon), alternatively you can use tools like `gobuster` or `ffuf`, below you can see the flag file is named as `gmbh.uyu`. Accessing the page prints the flag.
-
-![](https://i.imgur.com/AcL7Ifw.png)
+Then I used the list with [FinalRecon](https://github.com/thewhiteh4t/FinalRecon), alternatively you can use tools like `gobuster` or `ffuf`     and then i got the flag.juicy! juicy!
 
 **Key Learning and Takeaways**
 

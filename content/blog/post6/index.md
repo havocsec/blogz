@@ -1,5 +1,5 @@
 ---
-title: "Init How to Hack"
+title: "Hacking: Beyond the Hollywood Stereotype"
 subtitle: "Unlock your superpower.hacking is a superpower when you master it."
 date: 2025-06-04
 cardimage: hacking.webp
@@ -9,110 +9,130 @@ authors:
   - Havoc: logo.png
 ---
 
+---
 
-![](https://iamavu.com/01-init-how-to-hack/is-this-hacking.png)
+
+You’ve seen it in movies—dark room, black hoodie, green text flashing on the screen, and suddenly, _"I’m in."_ But hold on! That’s not real hacking. Sure, you _could_ sit in the dark, wear a hoodie, and stare at a terminal until your eyes hurt (and your mom yells at you—trust me, mine did). But hacking is so much more than that.
+
+So, ***what is hacking?***
+
+At its core, hacking is about finding vulnerabilities in systems and exploiting them to gain access, information, or control. A vulnerability could be a misconfiguration, a coding error, or even an unintended use of a system’s features. The exploitation is the method you use to take advantage of that flaw. The reward? Maybe elevated access, stolen passwords, or just crashing the system for fun.
+
+Wait, what?
+
+Okay, technical definitions aside, hacking is simply **making things work in ways they weren’t meant to**. Ever opened a soda bottle without an opener? Congrats, you _hacked_ it! (P.S. Not sponsored by Coca-Cola… or am I? _[Vsauce music plays]_.)
+
+Contrary to the Hollywood image, hacking isn’t just smashing keys on a keyboard. It involves reading code, studying documentation, researching, and—most importantly—**thinking outside the box**.
+
+### **The Vast World of Cybersecurity**
+
+Hacking is a **massive** field, and if you dive in without direction, it’s easy to get overwhelmed. There are countless domains within cybersecurity, and trying to learn everything at once can be discouraging.
+
+![roadmap](https://iamavu.com/_astro/roadmap.Dwre93Zg_1uuEE9.webp)
+Here’s a quick breakdown of major cybersecurity roles:
+
+1. **Security Engineer** – Designs and reviews secure systems, including networks, cloud security, and application development.
+    
+2. **Security Operations (SecOps)** – Focuses on preventing, detecting, and responding to cyber threats.
+    
+3. **Threat Intelligence** – Analysts who track cyber threats, requiring deep knowledge of security and networking.
+    
+4. **Risk Assessment (Red & Blue Teams)** – The "attackers" (Red Team) and "defenders" (Blue Team) who test and secure systems.
+    
+5. **Governance & Compliance** – The rule-makers who handle policies, audits, and regulatory standards.
+    
+
+### **Why Do We Need Hackers?**
+
+Because **nothing is perfect**. Humans build systems, and humans make mistakes. Hackers—the ethical ones—find and fix those mistakes before malicious actors exploit them.
+
+Speaking of which, not all hackers are the same:
+
+- **Unethical Hackers** – Use their skills for personal gain, often illegally.
+    
+- **Ethical Hackers** – Work legally to protect systems and prevent breaches.
+    
+ ![green screen](https://iamavu.com/_astro/threat-spectrum.DHq9AIvJ_clp2r.webp)
+### **How Do I Get Started?**
+
+There’s no single "right" path, but here’s a solid starting point:
+
+#### **1. Networking Basics**
+
+Everything connects—so understanding how data moves (IPs, MAC addresses, protocols) is crucial.  
+📌 _Resources:_
+
+- [Professor Messer’s Network+](https://www.professormesser.com/network-plus/n10-008/n10-008-training-course/)
+    
+- [Practical Networking YouTube Playlist](https://www.youtube.com/playlist?list=PLIFyRwBY_4bRLmKfP1KnZA6rZbRHtxmXi)
+    
+
+#### **2. Linux & The Terminal**
+
+Hacking often means working in a text-based environment. Get comfortable with Linux!  
+📌 _Resource:_ [Linux Journey](https://linuxjourney.com/)
+
+#### **3. Learn a Programming Language**
+
+To break something, you must first understand how it’s built. Python is a great starting point.  
+📌 _Resources:_
+
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
+    
+- [Bash Scripting Guide](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
+    
+- [Advanced Shell Scripting](https://www.shellscript.sh/)
+    
+
+#### **4. Hands-On Practice**
 
 
-We all saw this, black hoodie, green text on the screen, and what not and after a second the person says _“i’m in”_. Well, hold your horses and your computers, that is not actual hacking. well in a sense, you could wear a black hoodie and have a black and green terminal and sit in dark and wear a mask and stare at your screen, but you might hurt your eyes and your mum might yell at you. mine did, so just a warning!
+![hack](https://iamavu.com/_astro/hack.Pqn9O1b8_27sUrT.webp))
+Time to test your skills!  
+📌 _Platforms:_
 
-Well enough of that Let’s have a look into what the hacking means; hacking is the process of finding a vulnerability in a system, and then exploiting that vulnerability to gain something you wouldn’t otherwise have. a vulnerability can be a mis-configuration, an error, or improper use of existing functionality. the exploitation is the method you use to access that vulnerability. you then get something in return — say, more access, or a list of passwords, or simply a crash in the system.
+- [OverTheWire (Bandit Wargame)](https://overthewire.org/wargames/bandit/)
+    
+- [PicoCTF (Beginner CTFs)](https://picoctf.org/)
+    
+- [TryHackMe (Guided Learning)](https://tryhackme.com/)
+    
+- [HackTheBox (Real-World Challenges)](https://www.hackthebox.com/)
+    
+- [CTFtime (Competitions)](https://ctftime.org/)
+    
 
-Whoa, wait, wait, what’s this?
+#### **5. Join a Community**
 
-Well, that’s just a technical definition, to put it in simple terms — to make things work they are not supposed to! Did you find a way to open coca-cola without the opener? congrats, you *hacked *it! yay! p.s — i am not sponsored by coca-cola :D or am i? _(vsause theme plays)_
+Discord, Telegram, IRC—find a group where you can learn, ask questions, and grow.
 
-Hacking is generally assumed to be hitting keys on your keyboard but it’s not just that, it’s reading code, documentation, researching, and well lots of reading! It’s thinking out of the box.
+### **Final Tips**
 
-Now that we know what actual hacking is, let’s dive deeper into it! hacking is a really broad term. numerous things come under it, like really a lot of stuff, you can get lost in it, if you just go here and there and look and try out things without knowing what to do and what to learn, it can be overwhelming and you might get disheartened. have a look at this image which briefly covers the network of cyber security.
+✔ **Don’t stress certifications**—focus on learning.  
+✔ **Avoid burnout**—learn multiple things in parallel.  
+✔ **Embrace failure**—it means you’re trying!
 
-![roadmap](https://iamavu.com/_astro/roadmap.Dwre93Zg_1uuEE9.webp)image courtesy : [linkedin](https://www.linkedin.com/pulse/cybersecurity-domain-map-ver-30-henry-jiang/)
+For a **curated list of resources**, check out:  
+🔗 [Pandora GitHub Repo](https://github.com/Richie-havoc/pandora)
+📖 [Texts of Athena (GitBook)](https://iamavu.gitbook.io/the-texts-of-athena)
 
-whoa whoa, that’s a lot and it’s not green text :p
+Special thanks and credits to my friends for their support.
 
-well, it’s okay if you don’t know any of these terms, trust me you will learn, just be curious and ask the right questions! well, how do i ask the right questions? ask questions first, don’t be afraid to ask, you will realize which questions are wrong and which are right, but the important part is to ask.
+Now go out there—**learn, explore, and happy hacking!** 🚀
 
->  there are only two things you need to be good hacker; will to learn and curiositylearn-and-curiosity)
-
-okay, i got that much! now what?
-
-> warning : you might read some terms now which you never heard before, don’t stress out, google about them, see if it vibes with what you love, and learn googling, it’s a really important skill!
-
-no one knows everything and in cyber-security where the amount of data is being increased every day, you won’t know everything. so don’t be ashamed to google stuff if you don’t know stuff or if you just forgot something.
-
-well now let’s have a look at what are major domains there in information security
-
-**1.** **security engineer**. — this includes network designing, security architecture design, and review, cloud security, secure application development. so basically making secure stuff
-
-**2.** **security operations** — this domain mainly includes all the operations right from the prevention of cyber attack to dealing with as well as eradicating it.
-
-**3. threat intelligence** — the people in this domain are cyber threat analysts and they have immense knowledge of information security as well as knowledge in networking administration.
-
-**4. risk assessment** — here is the spicy part which you mostly see, the red teaming(attacking) and blue teaming(defense)
-
-**5. governance** — it’s basically like the government which sets and controls laws, administration, auditing, etc, it comprises of auditing, laws, policies and procedures, compliance, etc
-
-well okay, i understand who are hackers and what roles they have, but why do we need them? well, we are humans, we progress and we make mistakes, no one or nothing is perfect. there will be flaws and imperfections. that’s where hackers come into the picture, we protect systems, we test systems to know where the flaws are, we govern the networks, we architect them, we find information, we use it. we are anon…um we are hackers.
-
-this is why we need people who will secure the device or browser which you are reading this article on. but wait, i heard there are bad people too, who use the knowledge of hacking for their benefits, those are called unethical hackers, who do things without anyone’s permissions and then there is a nice part which is ethical hacking, people who do ethical hacking are called ethical hackers and they prevent and test systems so that unethical ones won’t be able to bring your systems down. there is also a spectrum which might help you understand a bit better
-
-![threat-spectrum](https://iamavu.com/_astro/threat-spectrum.DHq9AIvJ_clp2r.webp)image courtesy: [spectrum](https://www.digitalshadows.com/uploads/2019/09/the-cyber-threat-spectrum-source-fbi-cyber-division.png)
-
-so i got that much, but how do i proceed? where are the resources? how do i do this and that? how do i learn is there like a road-map? _well yes but no!_ there is no definitive road-map here, as i said the industry is constantly evolving and growing and moving, so things change. **but!** yes, there is a but! but, you can start in this way, which i found helpful and easy to grab things onto. let’s have a look at what you might need to get started.
-
-## networking:
-everything is connected, so you must know how things work and how data is being transferred from one place to another, what is ip and mac, and what is that and this. it will show you a new perspective to look at the world and the internet. you can pick up any good resource love, i found professor messer’s network+ to be a good start, you don’t have to give the exam if you don’t want to but learn and always keep on learning. some people did find it too long or over the top for learning security, so i have linked one more small youtube playlist which will work decently good.
-
-link: [network+](https://www.professormesser.com/network-plus/n10-007/n10-007-training-course/) & link: [playlist](https://www.youtube.com/watch?v=bj-Yfakjllc&list=PLIFyRwBY_4bRLmKfP1KnZA6rZbRHtxmXi)
-
-## linux:
-
-now, wait, what is linux again? that penguin? well, it’s technically a kernel but let’s not get into technicality. if you are going to hack, you will eventually end up at a terminal, a window with nothing but text, and getting familiar with it helps, master it! linux journey takes you from basics to good enough understanding of linux fairly well. so install a virtual machine and get set go! wait after completing the article maybe.
-
-link: [linux journey](https://linuxjourney.com/)
-
-## a programming language:
-
-now, i know i said we were hacking, so why do we even need to learn to program? well to break something you must understand how it is built. don’t be scared we don’t need to learn every language out there, just learn one and you can move the concepts and knowledge from there to another. so which one should i start with? i found python to be a real good start. it’s easy to get hold of and you can make fun tools and projects with it (maybe i am making one, just maybe). i found the book automate boring stuff with python a real good resource to learn. it takes you from no knowledge about programming to good enough that is needed. i also suggest learning bash for good automation, why? because automation is fun and it reduces the time needed for our tasks
-
-link: [automate boring stuff with python](https://automatetheboringstuff.com/), [bash guide (basics)](https://guide.bash.academy/), [shell script (little advance)](https://shellscript.sh/)
-
-## practical
-
-now that you know the basics and fair enough, it’s time to play and gamify your hacking. there are resources like hack the box(htb) and try hack me(thm) which let you test your skill and much more! what and how they work? well, i’ll leave the introduction of them to themselves! thm and htb feels a little overwhelming to me to directly dive into, so i suggest to try out overthewire first and then picoctf, again you will know what they are when you visit their respective websites i suggest the order as otw and parallelly picoctf then thm then htb.
-
-once you feel comfortable sprinkle in [ctfs](https://www.youtube.com/watch?v=8ev9zx9j45a) in between from ctftime
-
-link: [overthewire](https://overthewire.org/), [tryhackme](https://tryhackme.com/), [hackthebox](https://www.hackthebox.eu/), [picoctf](https://picoctf.org/), [ctftime](https://ctftime.org/)
-
-_phew, that was a lot!_
-
-wait, wait i forgot _(not actually)_ a really important thing! **communities!!** yes, get into a community, a discord server, or a telegram group or irc or whatever you love! even if you don’t understand anything, in the beginning, you will! you will learn and improve and you will fail too, but that’s the proof that you are trying. so start getting active into communities! and don’t get into rabbit holes of certification. the important part is to keep learning and growing and asking questions! also a tip, that you don’t have to learn this one by one, you can learn parallely too, which in my opinion is better as you don’t get a burn out i have mashed up all resources and much more interesting stuff into a sweet github repository called [pandora](https://github.com/Richie-havoc/pandora) and along with that a supplementary gitbook  from ***ianmavu***— [texts of athena](https://iamavu.gitbook.io/the-texts-of-athena/)
-
-have a look ^^
-
-special thanks to my fellow friends for encouraging me.salute all.
-
-and oh, if you want to reach out to me, feel free to do so.
-
-get set and pwn and happy hacking :D
-
-![hack](https://iamavu.com/_astro/hack.Pqn9O1b8_27sUrT.webp)
-
-**references :**
-
-[https://netsec.ws/?p=468#more-468](https://netsec.ws/?p=468#more-468)
-
-[https://netsec.ws/?p=536#more-536](https://netsec.ws/?p=536#more-536)
-
-[https://docfate111.github.io/cybersecclub/roadmap.html](https://docfate111.github.io/cybersecclub/roadmap.html)
-
-[https://medium.com/@rana.miet/information-security-what-why-how-462a1ae8fa61](https://medium.com/@rana.miet/information-security-what-why-how-462a1ae8fa61)
-
-[https://computersciencems.com/resources/cyber-security/cybersecurity-for-beginners-50-resources-to-get-you-started](https://computersciencems.com/resources/cyber-security/cybersecurity-for-beginners-50-resources-to-get-you-started)
-
-[https://medium.com/@tarun.n/cyber-security-for-beginners-5936020f91d6](https://medium.com/@tarun.n/cyber-security-for-beginners-5936020f91d6)
-
-[google](https://google.com/)
 
 ---
-credits to ianmavu and my fellow mates
+
+### **References & Credits**
+
+- [Hacker Fundamentals: A Right Way to Learn](https://www.netsecfocus.com/oscp/2021/03/06/The_Journey_to_OSCP.html)
+    
+- [The Difference Between Ethical & Unethical Hacking](https://www.cyberdegrees.org/resources/ethical-hacking-career/)
+    
+- [Cybersecurity Roadmap for Beginners](https://github.com/sundowndev/hacker-roadmap)
+    
+- [Why We Need Ethical Hackers](https://www.csoonline.com/article/564313/what-is-ethical-hacking-definition-and-examples.html)
+
+---
+
+ >*Got questions? Feel free to reach out!*
