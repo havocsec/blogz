@@ -190,7 +190,7 @@ The user `evanmassey1976` on reddit.com included a discord invite, in the #ran
 
 > ***Aleah Franco*** Note to self: Password for Mark's channel is 'ReallySecretNobodyKnowsAboutThisPassword'. Need to keep this safe. SK-CERT{d1sc0rd_b0t_s3cr3ts}
 
-`SK-CERT{d1sc0rd_b0t_s3cr3ts}`
+```SK-CERT{d1sc0rd_b0t_s3cr3ts}```
 
 That is the third flag.
 
@@ -221,7 +221,7 @@ Decoding that leads to the final flag of this challenge:
 
 ```shell
 echo 'U0stQ0VSVHtkbnNfcjNjMHJkXzFuc3AzY3Qwcn0=' | base 64 -d
-SK-CERT{dns_r3c0rd_1nsp3ct0r}
+```SK-CERT{dns_r3c0rd_1nsp3ct0r}```
 ```
 
 ---
