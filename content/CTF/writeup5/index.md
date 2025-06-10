@@ -13,7 +13,7 @@ authors:
 
 ### Tool
 
-![](https://github.com/lukaskuzmiak/cybergame.sk-2025-writeups/tree/main/ConnectionChecker#tool)
+![](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup5/images/connection%20checker%20tool.png?raw=true)
 
 Solution
 
@@ -26,7 +26,7 @@ SK-CERT{j4r_d3c0mp_k7}
 
 ## Lies
 
-![checker]()
+![checker](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup5/images/connectionchecker%20lies.png?raw=true)
 
 **Solution**
 
@@ -62,7 +62,7 @@ SK-CERT{k3y_f0r_c253rv3r}
 
 ## Executer
 
-![checker]()
+![checker](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup5/images/connection%20checker%20executor.png?raw=true)
 **Solution**
 
 Asked my nigga Chart-gpt to give me this code and **BOOM** the code.Receive the payload from server using this python code,
