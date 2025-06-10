@@ -1,5 +1,5 @@
 ---
-title: "CYBERGAME-{BASTION CHALLENGE} - 2025"
+title: "CYBERGAME-2025 {BASTION CHALLENGE}"
 subtitle: "⚡ Bastion was a cool challenge read through and feel it⚡"
 summary: "* Kenyan version organized by: Ministry of Information,Communications and the Digital Economy*"
 date: 2025-06-10
@@ -31,7 +31,7 @@ The Bastion series consists of four progressive challenges:
 - Base64 encoding/decoding
 ### **Challenge 1: Bastion - So much just from logs**
 
-![bastion](https://raw.githubusercontent.com/Daniel-wambua/images/refs/heads/main/bastion%20so%20much%20from%20logs.png?token=GHSAT0AAAAAADFMW2VAWXDU7BT3B5HS7M562CIAVVQ)
+![bastion](https://vscode.dev/github/havocsec/blogz/blob/main/content/CTF/writeup3/images/bastion%20so%20much%20from%20logs.png)
 
 
 **Solution:**
