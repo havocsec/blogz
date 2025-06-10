@@ -228,7 +228,7 @@ We found a suspicious SSH key in the authorized_keys file with a base64-encoded 
 
 ## 5. Challenge 5: Bastion - The backdoor culprit
 
-![bastion](https://raw.githubusercontent.com/Daniel-wambua/images/refs/heads/main/the%20backdoor%20culprit.png?token=GHSAT0AAAAAADFMW2VB6YSTVPZOUNYD4RF42CIA4OA)
+![bastion](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup3/images/the%20backdoor%20culprit.png?raw=true)
 
 For this challenge, we are provided with a git repository archive (`part5_ssh-bastion-repo.tar.gz`) and need to identify who added the backdoor we found in the previous challenge.
 
@@ -361,4 +361,4 @@ The Bastion series provides an excellent progression of challenges that build up
 
 ---
 
-> hope you enjoyed the reading.
+> hope you enjoyed the reading.Feel free to tag me.
