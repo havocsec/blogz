@@ -1,5 +1,5 @@
 ---
-title: "CYBERGAME-2025 {MALWARE-ANALYSIS AND REVERSE-ENGINEERING}"
+title: "CYBERGAME-2025 {MALWARE-ANALYSIS & REVERSE-ENG'}"
 subtitle: "⚡ always use sandboxed machines or secure machines when dealing with malw⚡"
 summary: "* Kenyan version organized by: Ministry of Information,Communications and the Digital Economy*"
 date: 2025-06-10
