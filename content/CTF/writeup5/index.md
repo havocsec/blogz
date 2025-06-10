@@ -13,7 +13,7 @@ authors:
 
 ### Tool
 
-![](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup5/images/connection%20checker%20tool.png?raw=true)
+![checker](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup5/images/connection%20checker%20tool.png?raw=true)
 
 Solution
 
