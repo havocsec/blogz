@@ -32,7 +32,7 @@ On **TripAdvisor** - you can search in the reviews for the first line. Bringing 
 
 Click on the user Jolaus profile - [https://www.tripadvisor.com/Profile/cybergameosintplayer?fid=cf222a74-0656-4ceb-a826-aea95aa2289d](https://www.tripadvisor.com/Profile/cybergameosintplayer?fid=cf222a74-0656-4ceb-a826-aea95aa2289d) and see in his intro the first flag
 
-`SK-CERT{h0t31_r3vi3w_f14g}`
+```SK-CERT{h0t31_r3vi3w_f14g}```
 
 ## Localization
 
@@ -53,7 +53,7 @@ I spent some time finding all possible images of Fungus rock that had GPS coordi
 After a couple of tries , I came up with these coordinates:
 
 ```
-36.04863,14.19105
+36.04860,14.19110
 ```
 
 ## Golden hour
@@ -77,7 +77,7 @@ import pytz
 from astral import LocationInfo
 from astral.sun import sun, azimuth as sun_azimuth
 
-loc = LocationInfo(timezone="CET", latitude=36.04865, longitude=14.19105)
+loc = LocationInfo(timezone="CET", latitude=36.04860, longitude=14.19110)
 
 print(loc.timezone)
 
@@ -174,6 +174,7 @@ After a cool google dorking i Found posts from `evanmassey1976` on reddit.com,
 
 The flag is hidden on the first line of each sentense so Take the first letter of each line then boom the flag.
 
+![osint](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup4/images/reddit.png?raw=true)
 ```
 SK-CERT{S0C14L-M3D14-0S1NT-TR41L}
 ```
