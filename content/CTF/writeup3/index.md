@@ -31,7 +31,7 @@ The Bastion series consists of four progressive challenges:
 - Base64 encoding/decoding
 ### **Challenge 1: Bastion - So much just from logs**
 
-![bastion](https://vscode.dev/github/havocsec/blogz/blob/main/content/CTF/writeup3/images/bastion%20so%20much%20from%20logs.png)
+![bastion](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup3/images/bastion%20so%20much%20from%20logs.png?raw=true)
 
 
 **Solution:**
@@ -49,7 +49,7 @@ This will reveal the flag: `SK-CERT{n3v3r_f0r637_4b0u7_d47_p3r51573nc3}`
   
 ## 2. Challenge 2: Bastion - Inspect the file system
 
-![bastion](https://raw.githubusercontent.com/Daniel-wambua/images/refs/heads/main/inspect%20the%20file%20system.png?token=GHSAT0AAAAAADFMW2VAZCQTM5E4KNQ6IKZ62CIAX3A)
+![bastion](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup3/images/inspect%20the%20file%20system.png?raw=true)
 
 
 For this challenge, we are provided with a docker layer archive file named `part2_docker_layer.tar.gz`. Our task is to inspect this file system and find any hidden flags.
@@ -108,7 +108,7 @@ After verification, the correct flag is: **SK-CERT{l34v3_17_70_7h3_pr05}** the o
 
 ## 3. Challenge 3: Bastion - Clean bastion
 
-![bastion](https://raw.githubusercontent.com/Daniel-wambua/images/refs/heads/main/clean%20bastion.png?token=GHSAT0AAAAAADFMW2VB2HNME2CNYVLDRURQ2CIAY7A)
+![bastion](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup3/images/clean%20bastion.png?raw=true)
 
 > ssh://exp.cybergame.sk:7009 (ratchet:23ekmnjr4bh5tgvfhbejncidj)
 
@@ -159,7 +159,7 @@ The flag was displayed in the welcome message upon SSH login: **SK-CERT{bru73_f0
 
 ## 4. Challenge 4: Bastion - Feel free to dig in
 
-![bastion](https://raw.githubusercontent.com/Daniel-wambua/images/refs/heads/main/feel%20free%20to%20dig%20in.png?token=GHSAT0AAAAAADFMW2VAZ72A76ZTHQEEPDFK2CIA2AA)
+![bastion](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup3/images/feel%20free%20to%20dig%20in.png?raw=true)
 
 > ssh://exp.cybergame.sk:7009
 
