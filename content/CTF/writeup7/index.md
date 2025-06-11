@@ -100,7 +100,7 @@ Solution
 2. [ENISA - Good Practice Guide for Incident Management](https://www.enisa.europa.eu/sites/default/files/publications/Incident_Management_guide.pdf), the longest part being the ladder which is white.
 3. [NIST SP 800-61r3](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r3.pdf); 2.1. Incident Response Life Cycle Model; "5 the truck looks at the shield and a sword"
 
-![colors_of_the_rainbow_3.png](https://github.com/lukaskuzmiak/cybergame.sk-2025-writeups/blob/main/Reading%20the%20dusty%20books/Solution/colors_of_the_rainbow_3.jpg)
+![rainbow](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup7/images/colors_of_the_rainbow_3.jpg?raw=true)
 
 ```
 RED,ORANGE-WHITE-5
