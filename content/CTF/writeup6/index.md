@@ -323,9 +323,8 @@ Success! Secret note: They fear the night, yet they do not understand its power.
 
 ## Final Curse
 
-Description
+![jaille](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup6/images/final%20escape.png?raw=true)
 
-The last piece of information we need should be in the notes of one of the users. We need to find it.
 
 *Solution*
 
@@ -1087,8 +1086,8 @@ This technique allowed me to run code as root and access the flag file in the ro
 ### **Final escape**
 The final challenge was to escape the docker container.
 
-![jaille](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup6/images/final%20escape.png?raw=true)
 
+You are root, but it seems you are inside a Docker container. Can you escape somehow once again?
 
 **Solution**
 
