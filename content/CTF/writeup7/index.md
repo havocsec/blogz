@@ -15,8 +15,6 @@ authors:
 
 ## Handling
 
-[](https://github.com/lukaskuzmiak/cybergame.sk-2025-writeups/tree/main/Reading%20the%20dusty%20books#handling)
-
 **Description**
 
 1. There was a large incident in a water treatment facility. It required response from various CSIRT teams, providing live system analysis, forensics, malware analysis, ICS expertise and other roles. You overheard a guy from team A talking about choosing a containment strategy. A guy from team B talking about containment and eradication stage. A guy from team C talking about evidence gathering and handling. Identify which two teams are likely using the same incident handling methodology.
@@ -56,10 +54,11 @@ Solution
 
 1. [NIST SP 800-61r2](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r2.pdf); 3.3.1 Choosing a Containment Strategy and 3.3.2 Evidence Gathering and Handling thats **AC**
 2. ISO/IEC 27035-1:2023, Annex B, B.1 Type of incidents, B.1.5 Access control; Second word is `access`
-3. [ENISA - Good Practice Guide for Incident Management](https://www.enisa.europa.eu/sites/default/files/publications/Incident_Management_guide.pdf), iconic object being a red fire truck, the chapter that is red in ToC is `Workflows`.
-![truck]()
+3. [ENISA - Good Practice Guide for Incident Management](https://www.enisa.europa.eu/sites/default/files/publications/Incident_Management_guide.pdf), iconic object
+![truck](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup7/images/truck.png?raw=true) being a red fire truck, the chapter that is red in ToC is `Workflows`.
+![truck](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup7/images/2025-06-11_14-16.png?raw=true)
 4. Same document,
-   ![doc]()     Figure 6 - Incident handling workflow, tip of the arrow is `IMPROVEMENT PROPOSALS`.
+   ![doc](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup7/images/arrow%20down.png?raw=true)     Figure 6 - Incident handling workflow, tip of the arrow is `IMPROVEMENT PROPOSALS`.
 5. Here I was not exactly sure which document it should be, I went based on [Incident Handler's Handbook](https://dl.icdst.org/pdfs/files3/d60a0c473353813ed1f32c4faefedbd6.pdf), looking for operating systems `Linux` appeared to be mentioned but very few times.
 
 ```
@@ -101,7 +100,7 @@ Solution
 2. [ENISA - Good Practice Guide for Incident Management](https://www.enisa.europa.eu/sites/default/files/publications/Incident_Management_guide.pdf), the longest part being the ladder which is white.
 3. [NIST SP 800-61r3](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r3.pdf); 2.1. Incident Response Life Cycle Model; "5 the truck looks at the shield and a sword"
 
-[![colors_of_the_rainbow_3.png](https://github.com/lukaskuzmiak/cybergame.sk-2025-writeups/raw/main/Reading%20the%20dusty%20books/Solution/colors_of_the_rainbow_3.jpg)](https://github.com/lukaskuzmiak/cybergame.sk-2025-writeups/blob/main/Reading%20the%20dusty%20books/Solution/colors_of_the_rainbow_3.jpg)
+![colors_of_the_rainbow_3.png](https://github.com/lukaskuzmiak/cybergame.sk-2025-writeups/blob/main/Reading%20the%20dusty%20books/Solution/colors_of_the_rainbow_3.jpg)
 
 ```
 RED,ORANGE-WHITE-5
