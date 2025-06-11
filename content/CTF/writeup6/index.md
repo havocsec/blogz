@@ -1087,7 +1087,8 @@ This technique allowed me to run code as root and access the flag file in the ro
 ### **Final escape**
 The final challenge was to escape the docker container.
 
-You are root, but it seems you are inside a Docker container. Can you escape somehow once again?
+![jaille](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup6/images/final%20escape.png?raw=true)
+
 
 **Solution**
 
