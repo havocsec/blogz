@@ -18,11 +18,8 @@ authors:
 
 ## Door To The Stable
 
-[](https://github.com/lukaskuzmiak/cybergame.sk-2025-writeups/tree/main/Equestria#door-to-the-stable)
+![web](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup6/images/doortothestable.png?raw=true)
 
-Description
-
-We are suspecting that the website on [http://exp.cybergame.sk:7000/](http://exp.cybergame.sk:7000/) is hiding something. We need to find out what is hidden in the website. We've gathered what seems to be a proxy configuration file from our trusted source.
 
 `nginx.conf`
 ```
@@ -73,14 +70,15 @@ Host: exp.cybergame.sk:7000
 ```
 so after identifying it it was easy feeding it to the browser and to spot the index.js file with the suspicious string.
 
-![princess]()
+![princess](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup6/images/index.js%20file.png?raw=true)
 ```
 pr1ncess:SK-CERT{0ff_by_4_s1ngle_sl4sh_f836a8b1}
 ```
 
 ## Shadow Realm
 
-![web]()
+![web](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup6/images/equetria-shadow%20realm.png?raw=true)
+
 *Solution*
 
 This is a race condition that can be exploited for 1 second from when a user is registered, while `sendEmailToAdministrator` is being executed.
@@ -128,6 +126,8 @@ CREATE TABLE IF NOT EXISTS users
 It is only later set to `false`, after the sleep of 1 second in `sendEmailToAdministrator`.
 
 All that needs to happen is to register an account and login before the `users.verified` is set to `false`, then you are in!
+
+![web](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup6/images/equestria%20race.png?raw=true)
 
 ```json
 {
@@ -405,11 +405,11 @@ SK-CERT{j4v4scr1p7_1s_full_of_curs3d_(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+([]
 ```
 
 ### **JAILE - Calculator**
+![calc](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup6/images/jaille%20calculator.png?raw=true)
 
-You have found an exposed calculator program. It doesn’t seem to do anything useful beyond simple arithmetic operations. The source code is also available on GitHub. Can you make this application more useful? Python version is 3.12.3
-
-Service: exp.cybergame.sk:7002
 calc.py
+
+**solution**
 
 The challenge involved analyzing an exposed Python calculator program (`calc.py`) running as a service on `exp.cybergame.sk:7002`. The goal was to find a vulnerability and exploit it to retrieve a flag.
 
@@ -577,6 +577,10 @@ The vulnerability lies in the insecure use of `exec()` combined with an inadequa
  The second challenge on the same calculator was this:
  
 ### **JAILE - User**
+
+![web](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup6/images/jaille%20user.png?raw=true)
+
+**solution**
 
 That is interesting functionality. We can see that a separate user was created to run the calculator, but maybe the root user has more secrets that can be uncovered.
 
