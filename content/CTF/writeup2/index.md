@@ -4,7 +4,7 @@ subtitle: "⚡ Hosted by JUSTHACKING TEAM AND THERE FRIENDS ⚡"
 summary: "*The 2025 challenges were really cool*"
 date: 2025-06-04
 cardimage: nahamcon.webp
-featureimage: nahamcon.webp
+featureimage: nahamcon-ctf.png
 caption: CTF Challenges
 authors:
   - Havoc: logo.png
