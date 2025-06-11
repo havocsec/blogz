@@ -1140,10 +1140,24 @@ It seems we cannot use any underscores—that might be challenging; Python inter
 
 After a few research ,I learned that *Python uses Unicode NFKC normalization before it executes code*. So we can _potentially_ sneak in some underscores, but it is not that easy. The important part is that not all Unicode characters are classified as `XID_Start` - meaning an identifier **cannot** begin with these characters, they are classified as `XID_Continue` instead - that means they can be a second or subsequent letters, but not the first.
 
-I wrote an [`underscores.py`](https://github.com/lukaskuzmiak/cybergame.sk-2025-writeups/blob/main/JAILE2/Calculator%20v2/Solution/underscores.py) to find everything that *NFKC normalization* will turn into *0x5F* ( `_`) - a regular ASCII underscore.
+I asked chat-gpt to write for me an `underscores.py` 
+```python
+import unicodedata
+
+chars = [
+    # isidentifier() means if it can be used as a first letter of a variable
+    f"U+{ord(c):04X} ({unicodedata.name(c)}) – {'XID_Start' if c.isidentifier() else 'XID_Continue'}"
+    for i in range(0x110000)
+    if unicodedata.normalize('NFKC', chr(i)) == '_'
+    for c in [chr(i)]
+]
+
+print("\n".join(chars))
+```
+to find everything that *NFKC normalization* will turn into *0x5F* ( `_`) - a regular ASCII underscore.
 
 ```
-python3 Solution/underscores.py
+python3 underscores.py
 U+005F (LOW LINE) – XID_Start
 U+FE33 (PRESENTATION FORM FOR VERTICAL LOW LINE) – XID_Continue
 U+FE34 (PRESENTATION FORM FOR VERTICAL WAVY LOW LINE) – XID_Continue
