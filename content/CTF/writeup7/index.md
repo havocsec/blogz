@@ -2,7 +2,7 @@
 title: "CYBERGAME-2025 {PROCESS AND GOVERNANCE}"
 subtitle: "⚡ felt like GRC,but cool⚡"
 summary: "* Kenyan version organized by: Ministry of Information,Communications and the Digital Economy*"
-date: 2025-06-10
+date: 2025-06-11
 cardimage: cybergame.png
 featureimage: cybergame.png
 caption: cybergame
