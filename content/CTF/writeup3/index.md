@@ -1,6 +1,6 @@
 ---
 title: "CYBERGAME-2025 {FORENSIC-CHALLENGES}"
-subtitle: "⚡ Bastion was a cool challenge read through and feel it⚡"
+subtitle: "⚡ Forensics challenges were cool.... read through and feel it⚡"
 summary: "* Kenyan version organized by: Ministry of Information,Communications and the Digital Economy*"
 date: 2025-06-10
 cardimage: cybergame.png
@@ -379,6 +379,8 @@ This feels like FX-PREG{cy41a_5vTu7} to me. Cannot hide my best work here.
 
 The text  `FX-PREG{cy41a_5vTu7}` is the flag but in ROT13 so we decode it to get the flag
 
+![hh](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup3/images/rot13%20dcode.png?raw=true)
+
 ```shell
 SK-CERT{pl41n_5iGh7}
 ```
@@ -399,7 +401,11 @@ Inside it is a flag:
 U0stQ0VSVHs3aDFzX1dBU18xN19hZnRlcl9hbGx9$EucR
 ```
 
-after decoding we get a cool flag...   `SK-CERT{7h1s_WAS_17_after_all}`
+after decoding we get a cool flag...
+
+![hh](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup3/images/second%20flag.png?raw=true)
+  
+   `SK-CERT{7h1s_WAS_17_after_all}`
 
 
 ## **Was that the only file?**
@@ -441,7 +447,7 @@ SK-CERT{R3c0V3r3D_R3cip3}
 
 It seems the `fourth-flag.aes.b64.txt` is the file for this challenge.
 
-I wrote `aes_decrypt.py` 
+I wrote `forensics.py` to assist in the decoding and so on,
 ```python
 import base64
 from Crypto.Cipher import AES
@@ -482,7 +488,8 @@ except Exception as e:
 
 and it got the flag right away 
 The Results are as below *cool and juicy!!!!!*
-![eugene]
+![eugene](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup3/images/forensics.png?raw=true)
+
 
 ```
 SK-CERT{d0esnt_m4ke_s3nse_7o_d0_f0rensics_anym0r3}
@@ -495,7 +502,7 @@ SK-CERT{d0esnt_m4ke_s3nse_7o_d0_f0rensics_anym0r3}
 **Solution**
 
 The `fifth.txt` contains the below text with the flag
-![eugene]
+![eugene](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup3/images/finalforensics.png?raw=true)
 
 `SK-CERT{1mp0ss1bly_H4RD}` 
 
@@ -596,7 +603,7 @@ if __name__ == '__main__':
 ```
 
 just run the code and let magic and power do its work ....to unpack it all, then just found the flag:...
-![greg]
+![greg](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup3/images/greg1.png?raw=true)
 
 
 
