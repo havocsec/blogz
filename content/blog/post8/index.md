@@ -57,4 +57,5 @@ nothing to do with their technical knowledge or ability. It just is. And if
 anyone tries to speak for all hackers, or for all hacking, they don't. 
 
 ---
+
 > Tag me....
