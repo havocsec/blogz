@@ -1,5 +1,5 @@
 ---
-title: "CYBERGAME-2025 {BASTION CHALLENGE}"
+title: "CYBERGAME-2025 {FORENSIC-CHALLENGES}"
 subtitle: "⚡ Bastion was a cool challenge read through and feel it⚡"
 summary: "* Kenyan version organized by: Ministry of Information,Communications and the Digital Economy*"
 date: 2025-06-10
@@ -358,6 +358,249 @@ The Bastion series provides an excellent progression of challenges that build up
 - [SSH Security Best Practices](https://www.ssh.com/academy/ssh/security)
 - [Git for Security Professionals](https://git-scm.com/book/en/v2)
 - [Linux Forensics Tools](https://www.kali.org/tools/)
+
+
+The next challenge on forensics
+
+# [★★☆] Eugene’s FATigue
+
+[](https://github.com/lukaskuzmiak/cybergame.sk-2025-writeups/tree/main/Eugene's%20FATigue#-eugenes-fatigue)
+
+## FATigue
+![eugene](https://miro.medium.com/v2/resize:fit:640/format:webp/1*2YNYZYcfvDyAXyLPS9WEGw.png)
+
+*Solution*
+
+The head of the challenge gave us a hint it was a *FATdisk image*.so after mounting the disk then  we got a file named *secret.txt* and innit we got the below text.
+
+```
+This feels like FX-PREG{cy41a_5vTu7} to me. Cannot hide my best work here.
+```
+
+The text  `FX-PREG{cy41a_5vTu7}` is the flag but in ROT13 so we decode it to get the flag
+
+```shell
+SK-CERT{pl41n_5iGh7}
+```
+## **Is that it?**
+![eugene](https://miro.medium.com/v2/resize:fit:720/format:webp/1*FDc02Ija-sH1SwY_5w-TUA.png)
+
+
+*Solution*
+
+Just casually searching for stuff in a hex editor, I noticed a PDF in there somewhere; there is some weird base64 inside the PDF:
+
+```
+VuwtuTeEEf9uthkAwc1_zzpRq9x4c/LV0TOw5x6a_U0stQ0VSVHs3aDFzX1dBU18xN19hZnRlcl9hbGx9$EucR/FqMoVaZvjx3OvGT_EV4u/Y7EDwDeA/w9QO3+^ALYXhvTD3R1JcGJUgKFi_mhzkezdqaIHzm261y9IQ_EV4u/Y7EDwDeA/w9QO3+
+```
+
+Inside it is a flag: 
+```shell
+U0stQ0VSVHs3aDFzX1dBU18xN19hZnRlcl9hbGx9$EucR
+```
+
+after decoding we get a cool flag...   `SK-CERT{7h1s_WAS_17_after_all}`
+
+
+## **Was that the only file?**
+
+![eugene](https://miro.medium.com/v2/resize:fit:720/format:webp/1*2g_-N1aMCuWe3x4oKQeh1A.png)
+
+*Solution*
+
+Ok, enough messing around with `strings` and ***hex editors***, we were clearly intended to actually recover data for real.
+
+Here the recovery was attempted with **PhotoRec/TestDisk**, in one of the runs corrupted files were enabled; this recovered the files in [`recovered/`](https://github.com/lukaskuzmiak/cybergame.sk-2025-writeups/blob/main/Eugene's%20FATigue/Solution/recovered). The corrupted ZIP can be unpacked with:
+
+```shell
+7z x b0003185_file.zip
+```
+
+This unpacks three files:
+
+```
+fifth.txt
+file
+fourth-flag.aes.b64.txt
+```
+
+`file` is the file relevant for the third flag and it contains the following text:
+
+> Begin by gently whispering to a fresh beetroot, ensuring it's thoroughly startled before peeling. Simmer beef slices under moonlight until they hum softly, indicating readiness. Combine with precisely three beetroot dreams, diced finely, and a pinch of yesterday’s laughter. Allow the mixture to philosophize in an oven preheated to curiosity. Occasionally stir with a skeptical spoon, preferably wooden, until the aroma resembles purple jazz. Serve only after garnishing with a sprinkle of questions unanswered, paired with a side dish of a sautéed third flag SK-CERT{R3c0V3r3D_R3cip3}.
+
+The flag was cool and was:
+
+```
+SK-CERT{R3c0V3r3D_R3cip3}
+```
+
+## It tastes like a poem
+![keep](https://miro.medium.com/v2/resize:fit:720/format:webp/1*GcYsODwaCtsSHUV2IpdTJA.png)
+
+*Solution*
+
+It seems the `fourth-flag.aes.b64.txt` is the file for this challenge.
+
+I wrote `aes_decrypt.py` 
+```python
+import base64
+from Crypto.Cipher import AES
+
+# Load and decode the file
+with open("fourth-flag.aes.b64.txt", "r") as f:
+    data = base64.b64decode(f.read().strip())
+
+# Best working parameters from our tests
+null_key = bytes(32)  # 32 null bytes for AES-256
+iv = data[:16]        # First 16 bytes as IV
+ciphertext = data[16:]
+
+# Decrypt using AES-CBC
+cipher = AES.new(null_key, AES.MODE_CBC, iv=iv)
+decrypted = cipher.decrypt(ciphertext)
+
+# Clean up padding and save full output
+try:
+    # Remove PKCS#7 padding if present
+    pad_len = decrypted[-1]
+    if pad_len <= 16 and all(b == pad_len for b in decrypted[-pad_len:]):
+        decrypted = decrypted[:-pad_len]
+    
+    # Save to file and print first 200 characters
+    with open("decrypted_poem.txt", "wb") as f:
+        f.write(decrypted)
+    
+    print("Full decryption saved to decrypted_poem.txt")
+    print("\nFirst 200 characters:")
+    print(decrypted[:200].decode('utf-8', errors='replace'))
+
+except Exception as e:
+    print("Error cleaning padding:", e)
+    print("Raw output (first 200 bytes):")
+    print(decrypted[:200])
+```
+
+and it got the flag right away 
+The Results are as below *cool and juicy!!!!!*
+![eugene]
+
+```
+SK-CERT{d0esnt_m4ke_s3nse_7o_d0_f0rensics_anym0r3}
+```
+
+## **Wrapping it up**
+
+![eugene](https://miro.medium.com/v2/resize:fit:720/format:webp/1*hcpfwA7nCsHWze2Dz2HVGQ.png)
+
+**Solution**
+
+The `fifth.txt` contains the below text with the flag
+![eugene]
+
+`SK-CERT{1mp0ss1bly_H4RD}` 
+
+That was the flag for this challenge. It seems **PhotoRec/TestDisk** recovered enough mess after the ZIP or 7z did a good job to extract this anyway, not sure, to be honest.
+
+>*thats it on the eugene fatigue now to the next challenge:*
+# [★☆☆] The Chronicles of Greg 2 — Frustrating compression
+
+On this challenge it was cold to me but a nigga gave me glasses to see it through though it was the last minute and the servers were down i coulnt submit the results but were correct after crawling though other writeups and in deed i was correct.that made me cool.enough with the crap  lets dive in :
+
+### 1. **The Chronicles of Greg Frustrating compression**
+
+
+There was a **lot** of archives here, after fiddling with it manually for a minute or so, it quickly became clear that it was a no-go. I asked chat-gpt to help create a code several times and at long last i got it right with few tweaks it was ready to go....
+
+`extract.py`
+
+```python
+#!/usr/bin/env python3
+import logging
+import os
+import shutil
+import tarfile
+import tempfile
+import zipfile
+
+import py7zr
+import rarfile
+
+START_ARCHIVE = '00114021.tar'
+OUTPUT_DIR = '/tmp/out'
+
+# Supported archive extensions
+ARCHIVE_EXTENSIONS = ('.zip', '.tar', '.rar', '.7z')
+
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+
+def is_archive(filename):
+    return filename.lower().endswith(ARCHIVE_EXTENSIONS)
+
+
+def extract_archive(filepath, extract_to):
+    if filepath.endswith('.zip'):
+        with zipfile.ZipFile(filepath, 'r') as zf:
+            zf.extractall(extract_to)
+    elif filepath.endswith('.tar'):
+        with tarfile.open(filepath, 'r:*') as tf:
+            tf.extractall(extract_to, filter='tar')
+    elif filepath.endswith('.rar'):
+        with rarfile.RarFile(filepath) as rf:
+            rf.extractall(extract_to)
+    elif filepath.endswith('.7z'):
+        with py7zr.SevenZipFile(filepath, mode='r') as z:
+            z.extractall(extract_to)
+    else:
+        raise ValueError(f'Unsupported archive: {filepath}')
+
+
+processed_archives = set()
+
+
+def process_archive(filepath):
+    abs_path = os.path.abspath(filepath)
+    if abs_path in processed_archives:
+        logging.warning('Skipping already processed archive: %s', filepath)
+    else:
+        logging.debug('Extracting archive: %s', filepath)
+    processed_archives.add(abs_path)
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        try:
+            extract_archive(filepath, tmpdir)
+        except Exception:
+            logging.exception(f'Failed to extract {filepath}')
+            return
+
+        for root, _, files in os.walk(tmpdir):
+            for name in files:
+                full_path = os.path.join(root, name)
+                logging.debug('Found file: %s', full_path)
+                if is_archive(name):
+                    logging.debug('Recursing into nested archive: %s', full_path)
+                    process_archive(full_path)
+                    print('.', end='', flush=True)
+                else:
+                    rel_path = os.path.relpath(full_path, tmpdir)
+                    out_path = os.path.join(OUTPUT_DIR, rel_path)
+                    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+                    logging.debug('Copying non-archive file to output: %s', out_path)
+                    shutil.copy2(full_path, out_path)
+                    print('+', end='', flush=True)
+
+
+if __name__ == '__main__':
+    process_archive(START_ARCHIVE)
+    print()
+```
+
+just run the code and let magic and power do its work ....to unpack it all, then just found the flag:...
+![greg]
+
+
+
+>the next part was the most challenging part even with the glasses it was hard headed to me.i coundnt crack it but i will try to,,
 
 ---
 
