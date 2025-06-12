@@ -40,10 +40,6 @@ It’s about sovereignty — reshaping identity, cognition, and action into unst
 You don’t learn ***HAVOC Mode***.
 You remember that you were the source all along.
 
-### **Building Legacy**  
-Today, I:  
-- 🔐 **Code** open-source security tools  
-- 🎤 **Blog** or write blogs to demystify hacking  
-- 🧠 **Teach** newcomers that "ethical" doesn’t mean "less dangerous"  
+Learn,Research Then Apply
 
 ---
