@@ -24,13 +24,11 @@ the image above.
 
 i performed some seaches and It seems the `photo.jpg` is from [Best_Western_Premier_Malta-St_Paul_s_Bay_Island_of_Malta](https://www.tripadvisor.com/Hotel_Review-g608946-d27536201-Reviews-Best_Western_Premier_Malta-St_Paul_s_Bay_Island_of_Malta.html)
 
-Identified the hotel in the image and found it on Google - [Best Western Premium Hotel Malta ](https://www.google.com/travel/search?q=best%20western%20premier%20malta&g2lb=4965990%5B%E2%80%A6%5DCCQklcUD-ue1Ax0IJCSVxQP657UDHSAA&ap=MAC6AQdyZXZpZXdz&ictx=111) One of the reviews on that page ^ was made by a nigga by the alias`cybergameosintplayer` - which is linked from tripadvisor and it  says:
+Identified the hotel in the image and found it on Google after doing some image reverse search   - [Best Western Premium Hotel Malta ](https://www.google.com/travel/search?q=best%20western%20premier%20malta&g2lb=4965990%5B%E2%80%A6%5DCCQklcUD-ue1Ax0IJCSVxQP657UDHSAA&ap=MAC6AQdyZXZpZXdz&ictx=111) One of the reviews on that page ^ was made by a nigga by the alias `cybergameosintplayer` - which is linked from tripadvisor and it  says:
 
-> I recently stayed at this hotel and had a pleasant overall experience. The check-in process was smooth and the staff were friendly and helpful throughout my stay. …
+> I recently stayed at this hotel and had a pleasant overall experience. The check-in process was smooth and the staff were friendly and helpful throughout my stay BLAH BLAH BLAH. …
 
-On **TripAdvisor** - you can search in the reviews for the first line. Bringing you this review that seems to match [https://www.tripadvisor.com/ShowUserReviews-g608946-d27536201-r1000507523-Best_Western_Premier_Malta-St_Paul_s_Bay_Island_of_Malta.html](https://www.tripadvisor.com/ShowUserReviews-g608946-d27536201-r1000507523-Best_Western_Premier_Malta-St_Paul_s_Bay_Island_of_Malta.html)
-
-Click on the user Jolaus profile - [https://www.tripadvisor.com/Profile/cybergameosintplayer?fid=cf222a74-0656-4ceb-a826-aea95aa2289d](https://www.tripadvisor.com/Profile/cybergameosintplayer?fid=cf222a74-0656-4ceb-a826-aea95aa2289d) and see in his intro the first flag
+On **TripAdvisor** Click on the user Jolaus profile - [https://www.tripadvisor.com/Profile/cybergameosintplayer?fid=cf222a74-0656-4ceb-a826-aea95aa2289d](https://www.tripadvisor.com/Profile/cybergameosintplayer?fid=cf222a74-0656-4ceb-a826-aea95aa2289d) and see in his intro the first flag
 
 ```SK-CERT{h0t31_r3vi3w_f14g}```
 
