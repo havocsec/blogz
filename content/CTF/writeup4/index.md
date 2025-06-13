@@ -30,7 +30,7 @@ Identified the hotel in the image and found it on Google after doing some image 
 
 On **TripAdvisor** Click on the user Jolaus profile - [profile](https://www.tripadvisor.com/Profile/cybergameosintplayer?fid=cf222a74-0656-4ceb-a826-aea95aa2289d) and see in his intro the first flag
 
-![picture]
+![picture](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup4/images/2025-06-13_14-30.png?raw=true)
 
 ```SK-CERT{h0t31_r3vi3w_f14g}```
 
@@ -205,7 +205,9 @@ That is the third flag.
 - You are then added to the #hacking channel. There is an **image**  
   ![osint](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup4/images/discord%20image.png?raw=true)
 - posted of a forum where all the operations are being migrated to.
-- In the descriptive text of that image, still in Discord you will find the text `freirehf-fancr.rh`.
+- In the descriptive text of that image, still in Discord you will find the text
+![text](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup4/images/discord%20fanherit.png?raw=true)
+ `freirehf-fancr.rh`.
 - This is ROT13 of the domain `serverus-snape.eu`.
 
 This domain has a TXT record with a weird looking base64:
@@ -219,10 +221,9 @@ serverus-snape.eu descriptive text "U0stQ0VSVHtkbnNfcjNjMHJkXzFuc3AzY3Qwcn0="
 
 Decoding that leads to the final flag of this challenge:
 
-```shell
-echo 'U0stQ0VSVHtkbnNfcjNjMHJkXzFuc3AzY3Qwcn0=' | base 64 -d
+![dns](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup4/images/dns%20lookup.png?raw=true)
+
 ```SK-CERT{dns_r3c0rd_1nsp3ct0r}```
-```
 
 ---
 
