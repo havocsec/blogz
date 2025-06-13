@@ -28,7 +28,9 @@ Identified the hotel in the image and found it on Google after doing some image 
 
 > I recently stayed at this hotel and had a pleasant overall experience. The check-in process was smooth and the staff were friendly and helpful throughout my stay BLAH BLAH BLAH. …
 
-On **TripAdvisor** Click on the user Jolaus profile - [https://www.tripadvisor.com/Profile/cybergameosintplayer?fid=cf222a74-0656-4ceb-a826-aea95aa2289d](https://www.tripadvisor.com/Profile/cybergameosintplayer?fid=cf222a74-0656-4ceb-a826-aea95aa2289d) and see in his intro the first flag
+On **TripAdvisor** Click on the user Jolaus profile - [profile](https://www.tripadvisor.com/Profile/cybergameosintplayer?fid=cf222a74-0656-4ceb-a826-aea95aa2289d) and see in his intro the first flag
+
+![picture]
 
 ```SK-CERT{h0t31_r3vi3w_f14g}```
 
