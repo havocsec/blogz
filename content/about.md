@@ -3,15 +3,16 @@
 type: misc
 
 # change these
-jobTitle: Ethical Hacker | Security Researcher | Developer | Pentester | CTF Player
+jobTitle: Security-Researcher | Student | Pentester | CTF Player
 name: Richie Havoc
 bio: true
 icon: ":coffee:"
 
 ---
 ### *Hacker by Nature, Builder by Purpose*   
-  
+
 **Philosophy:** *"Break to understand. Build to endure."*  
+
 ---
 ### 👋 **Who Am I?**  
 A Student and also  security obsessive who laughs at *"secure by default"* claims. By day, I architect systems that resist chaos. By night, I’m the chaos—probing networks, dissecting APIs, and turning vulnerabilities into lessons.  
