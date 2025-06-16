@@ -538,7 +538,7 @@ The next challenge that was cool.
 ![file](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup9/images/crack%20me.png?raw=true)
 ## Challenge Description
 
-The challenge provided a [**'crackme.zip'**](https://github.com/Daniel-wambua/blogz/raw/bf313865e56c8f0e5031f07fcbaa18906a4bedc1/content/CTF/writeup9/images/crackme.zip) file and a hint: "You might need a little more than reversing...". The password for the zip file was given as "reverseit".
+The challenge provided a [**'crackme.zip'**](https://github.com/Daniel-wambua/blogz/raw/bf313865e56c8f0e5031f07fcbaa18906a4bedc1/content/CTF/writeup9/images/crackme.zip) file and a hint: "You might need a little more than reversing...".
 
 ## Solution Steps
 
