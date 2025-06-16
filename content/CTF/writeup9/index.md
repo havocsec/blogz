@@ -10,9 +10,12 @@ authors:
   - Havoc: logo.png
 ---
 
+![lock](https://github.com/Daniel-wambua/blogz/blob/main/content/CTF/writeup9/images/qs.png?raw=true)
+
 ## Challenge Description
 
 The challenge, "The Phantom's Masquerade," involves a smart contract deployed on Base Sepolia at `0x85aD671D00348eA2924e7472A678dD085b4B1Dd4`. The goal is to "unmask the phantom and reveal its true nature to claim the hidden treasure." The challenge hints point towards `delegatecall` and storage layout confusion.
+
 ## Vulnerability Analysis
 
 The `ProxyMaster` contract acts as a proxy, forwarding calls to an `implementation` address using `delegatecall`. The relevant parts of the `ProxyMaster` contract are:
@@ -526,3 +529,54 @@ The flag obtained is: `SCOK{d3l3l3g4t3c4ll_pr0xy_1337}`
 ## Conclusion
 
 This challenge demonstrates a common vulnerability in upgradeable proxy contracts where insufficient access control on the `setImplementation` function, combined with the nature of `delegatecall` and storage slot collisions, can lead to unauthorized state modifications. By carefully crafting a malicious implementation contract that aligns its storage layout with the proxy's critical state variables, an attacker can take control of the proxy's state. This highlights the importance of robust access control and careful consideration of storage layout when designing upgradeable proxy patterns.
+
+
+## S!l3nt B4nk H31st
+
+## Challenge Description
+The challenge involved a bank's vault security system that leaked timing information during PIN verification. The goal was to analyze provided timing logs to recover a 6-digit PIN. The flag format was `flag{PIN}`.
+
+## Analysis of `vault_chall.py`
+
+Upon reviewing `vault_chall.py`, the core vulnerability was identified in the `check_pin` function:
+
+```python
+def check_pin(pin_attempt):
+    for i in range(6):
+        if pin_attempt[i] != SECRET_PIN[i]:
+            return False, 0
+        time.sleep(DELAY_PER_DIGIT)  
+    return True, DELAY_PER_DIGIT * 6
+```
+
+This function introduces a `DELAY_PER_DIGIT` (0.1 seconds) for each correct digit in the PIN. This means that the longer the delay, the more digits of the `pin_attempt` match the `SECRET_PIN`. This is a classic timing attack vulnerability.
+
+## Analysis of `timing_leak(1).log`
+
+The `timing_leak(1).log` file contains numerous attempts and their corresponding delays. For example:
+
+`Attempt: 739288 -> Delay: 0.00ms`
+`Attempt: 739281 -> Delay: 0.60ms`
+
+The goal was to find the PIN attempt that resulted in the maximum delay, as this would indicate the most matching digits.
+
+## Timing Attack Implementation
+
+To recover the PIN, a Python script (`timing_analysis.py`) was created to parse the `timing_leak(1).log` file. The script works as follows:
+
+1. **Parse Log Entries**: It reads each line, extracts the PIN attempt and the corresponding delay.
+2. **Aggregate Delays**: For each position (0-5) and each possible digit (0-9), it aggregates the delays observed when that digit appeared at that position.
+3. **Calculate Average Delays**: For each position and digit, it calculates the average delay.
+4. **Identify Most Likely Digit**: For each position, the digit that resulted in the highest average delay is considered the most likely correct digit for that position.
+
+This process is repeated for all 6 digits of the PIN.
+
+## Recovered PIN
+After running the `timing_analysis.py` script, the recovered PIN was `739281`.
+
+## Flag
+The flag format is `flag{PIN}`.
+
+Therefore, the flag is `flag{739281}`.
+
+
