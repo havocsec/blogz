@@ -2,25 +2,22 @@
 Welcome to my personal blog and Capture The Flag (CTF) writeups repository! This space is dedicated to documenting my journey through cybersecurity, ethical hacking, and technical problem-solving.
 
 🔍 What's Inside?
-CTF Writeups
-Walkthroughs and solutions for various CTF challenges across platforms like Hack The Box, TryHackMe, PicoCTF, and more.
+**CTF Writeups**
+      > Walkthroughs and solutions for various CTF challenges.
+**Technical Articles**
+      > Deep dives into cybersecurity concepts, tools, reverse engineering, web exploitation, OSINT, and other infosec topics.
+**Tips & Tricks**
+      > Handy references, command-line snippets, and methodologies that help streamline hacking workflows.
+**Learning Logs**
+      > Personal reflections, new things I’ve learned, and evolving perspectives on security and technology.
 
-Technical Articles
-Deep dives into cybersecurity concepts, tools, reverse engineering, web exploitation, OSINT, and other infosec topics.
-
-Tips & Tricks
-Handy references, command-line snippets, and methodologies that help streamline hacking workflows.
-
-Learning Logs
-Personal reflections, new things I’ve learned, and evolving perspectives on security and technology.
-
-🎯 Purpose
+**🎯 Purpose**
 This repository exists to:
 
-Share knowledge with the community.
+   Share knowledge with the community.
 
-Reinforce my own understanding through documentation.
+   Reinforce my own understanding through documentation.
 
-Help beginners in cybersecurity get actionable insights.
+   Help beginners in cybersecurity get actionable insights.
 
-Encourage open discussion and collaborative learning.
+   Encourage open discussion and collaborative learning.
