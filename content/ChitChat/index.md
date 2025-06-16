@@ -1,3 +1,3 @@
 ---
-title: ChitChat-Arena
+title: ChitChat
 ---
