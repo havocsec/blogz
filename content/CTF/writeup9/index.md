@@ -781,5 +781,5 @@ Based on the reverse engineering, the key was to input the decimal value `31337`
 
 `flag{much_reversing_very_ida_wow}`
 
-> That was a cool ctf and i got various chall' that were very cool and juicy!! but the above were the one were interesting to me.⚡
+> That was a cool ctf and i got various chall' that were very cool and juicy!! but the above were the one were interesting to me and i ahd the urge to share.⚡
 
