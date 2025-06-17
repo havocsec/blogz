@@ -8,16 +8,16 @@ main:
   weight: 10
 - name: Blog
   url: /blog/
-  weight: 20
+  weight: 30
 - name: CTF
   url: /ctf/
-  weight: 20
+  weight: 30
 - name: Whoami
   url: /about/
-  weight: 30
+  weight: 20
 - name: pentesting
   url: /pentesting/
-  weight: 40
-- name: ChitChat
-  url: /chitchat/
   weight: 50
+- name: chitchat
+  url: /chitchat/
+  weight: 60 
