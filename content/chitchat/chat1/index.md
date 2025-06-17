@@ -1,5 +1,5 @@
 ---
-title: "The 'Elite' Hacker Wannabes: A Chitchat on Social Media Pressure"
+title: "The 'Elite' Hacker Wannabes:Social Media Pressure"
 subtitle: "A humorous take on the social media pressure faced by aspiring hackers"
 summary: "A humorous take on the social media pressure faced by aspiring hackers, exploring the phenomenon of self-proclaimed 'elite' hackers and the unrealistic expectations they set for beginners in the cybersecurity field."
 date: 2025-06-17
@@ -40,6 +40,16 @@ Or perhaps they're boasting about their Linux skills, as if using a different op
 ![Linux Meme](https://private-us-east-1.manuscdn.com/sessionFile/4TmNV84lHaKwMq7WL0wjNb/sandbox/YnASfohjJZQA63SOyYN5qW-images_1750146656669_na1fn_L2hvbWUvdWJ1bnR1L3VwbG9hZC9zZWFyY2hfaW1hZ2VzL0dnZlRWR0F2aXB3YQ.jpeg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvNFRtTlY4NGxIYUt3TXE3V0wwd2pOYi9zYW5kYm94L1luQVNmb2hqSlpRQTYzU095WU41cVctaW1hZ2VzXzE3NTAxNDY2NTY2NjlfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwzVndiRzloWkM5elpXRnlZMmhmYVcxaFoyVnpMMGRuWmxSV1IwRjJhWEIzWVEuanBlZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2NzIyNTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=PhzmwJFyuA0sBle8kaPSgixEOo-QWvu0WMiHlaRHR9smMxkcFSO587-cF4elhq5Z-rShegn1ycQ325gF09NQlwZIznQztC5ZTQDFjxOGmYV-Fva3vFAzl-a7-6GdoKD-rWdAQpW2kAUWdzaAsVQuPUYQjnHIzx-8fo2zwmJSbdA1UPCh~F7h6~8FmpEBu8YCFLqFhQ3UcP1V85g5mbI30Pl~2EGraOMOjyKfIzcBsC~6A96uF8NiXBvEeLdRn6xTtks5PQONWeMMjFZfxQuxI80Isi8c3zzL~8FMSwFXwB~q9MSduxGdba9Q-im0UZMmvVAk4D1Iv2JjTLpM-1PCsg__)
 
 It's all about the show, isn't it? The dramatic screenshots, the cryptic messages, the vague threats of 'unleashing' their skills. It's less about actual hacking and more about building a persona that screams 'I'm a super cool, super mysterious hacker, fear me!'
+
+---
+### Gain skills, not just knowledge
+---
+
+Some of these self-inflicted "skills gaps" for those starting out are due to role expectations after being certified. These are the same people failing tech interviews when it is time to perform. In the modern tech world it is no longer acceptable to just read a book, do a CompTIA exam and wing it until someone shows you mercy for employment.
+
+You must be more practical by not only learning theory of specialized security subjects, but you must actually PUT IT INTO PRACTICE! Being well-versed in theory will get you to a lot places but in the security space we do more than just discuss these matters, we must implement the solutions.
+
+Reiteration: Congrats on your recent certification, but this field can not truly solve issues with multiple choice tests. What can you do?
 
 ---
 
